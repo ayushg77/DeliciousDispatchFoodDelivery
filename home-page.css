@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    height: 80px;
+    background-color: whitesmoke;
+    border: 0px solid white;
+    box-shadow: 0px 0px 15px 1px rgb(203, 202, 202);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.logo{
+    font-family: "Sofia", sans-serif;
+    font-weight: 700;
+    color: rgb(167, 3, 3);
+    text-shadow: 5px 5px 5px grey;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.navtop a{
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+    font-family: monospace;
+}
+
+.navdiv i:hover{
+    color: rgb(167, 3, 3);
+    cursor: pointer;
+}
+.navtop a:hover{
+    color: rgb(167, 3, 3);
+    cursor: pointer;
+}
+.bx-search:before{
+    content: "\ebf7";
+    position: relative;
+    top: 2px;
+}
+.bx-food-menu:before{
+    content: "\eae7";
+    position: relative;
+    top: 2px;
+}
+.bx-help-circle:before {
+    content: "\eb0d";
+    position: relative;
+    top: 2px;
+}
+.bx-cart:before {
+    content: "\ea36";
+    position: relative;
+    top: 2px;
+}
+.mood{
+    padding-left: 150px;
+    animation: flash 2s infinite, ease-in-out;
+}
+@keyframes flash{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.top-food-display img{
+    max-width: 150px;
+}
+.top-food-display{
+    text-align: center;
+    display:flex;
+    overflow-x: auto;
+}
+.top-food-display::-webkit-scrollbar{
+    appearance: none;
+    /* scroll-behavior: smooth; */
+}
+.food-diplay p{
+    text-align: center;
+    padding-left: 40px;
+    color: rgb(92, 92, 92);
+    font-weight: bold;
+}
+.food-diplay a{
+   text-decoration: none;
+}
+.food-diplay img{
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
+    margin-left: 40px;
+}
+.food-diplay img:hover{
+    transform: scale(1.1);
+}
+.top-food-display-container{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+.diplay-end{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.best-restaurant{
+    font-size: 25px;
+    font-weight: 900;
+   /* font-family: 'Times New Roman', Times, serif; */
+   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+   /* font-family: Arial, Helvetica, sans-serif; */
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /* font-family: cursive; */
+   /* font-family: monospace; */
+    margin-left: 120px;
+}
+.menu-diplay-container{
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.first{
+    width: 300px;
+    height: 300px;
+    border: 0px solid black;
+    margin-left: 40px;
+    transform: scale(1);
+    transition: transform .2s;
+    }
+.first:hover{
+    transform: scale(0.97);
+    cursor: pointer;
+}
+.menu-diplay-container img{
+    border-radius: 20px;
+    width: 300px;
+    height: 220px;
+}
+.img-text{
+    color: white;
+    position: absolute;
+    top: 180px;
+    padding: 10px;
+}
+.img-text h4{
+    font-weight: bold;
+    font-size: 25px;
+}
+.restaurant-name{
+    font-size: 25px;
+    padding-left: 10px;
+    color: black;
+}
+.delivery-info{
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.bxs-star:before {
+    content: "\eeb8";
+    position: relative;
+    top: 1.5px;
+}
+.delivery-info i{
+    color: rgba(255, 183, 0, 0.896);
+}
+.restaurant-info{
+    color: black;
+    padding-left: 12px;
+}
+.address{
+    color: black;
+    padding-left: 12px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Delicious Dispatch</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body background="images/login.jpg">
+    <div class="container">
+        <div class="login" id="loginForm">
+            <form action="home-page.html" id="loginForm">
+                <h1 class="login-h">Login</h1>
+                <div class="input_box">
+                    <input type="text" id="loginPhoneNumber" placeholder="Phone Number" maxlength="10" minlength="10" required>
+                    <i class='bx bxs-phone'></i>
+                </div>
+                <div class="input_box">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="loginhere">
+                    <p> Having a health issues? 
+                        <a href="healthy-login.html">Health login?</a>
+                    </p>
+                </div>
+                <button type="button" class="login_btn" onclick="submitLogin()">Login</button>
+                <div class="register_link">
+                    <p>Don't have an account?
+                        <a href="signup.html">Signup?</a>
+                    </p>
+                </div>
+            </form>  
+        </div>
+    </div>
+    <script>
+        function submitLogin() {
+            var loginPhoneNumber = document.getElementById("loginPhoneNumber").value;
+            var loginEmail = document.getElementById("loginEmail").value;
+
+            var users = JSON.parse(localStorage.getItem("users")) || [];
+
+            var userFound = users.some(user => user.phoneNumber === loginPhoneNumber && user.email === loginEmail);
+
+            if (userFound) {
+                alert("Login successful!");
+                window.location.href = "home-page.html";
+            } else {
+                alert("Invalid login credentials");
+            }
+        }
+    </script>
+</body>
+</html>

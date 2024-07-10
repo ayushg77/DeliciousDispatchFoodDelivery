@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Delicious Dispatch</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body background="images/login.jpg">
+    <div class="container">
+        <div class="general-signup" id="signupForm">
+            <form action="login.html" id="signupForm">
+                <h1 class="signup-h">Signup</h1>
+                <div class="input_box_signup">
+                    <input type="text" id="name" placeholder="Name" maxlength="50" required>
+                </div>
+                <div class="input_box_signup">
+                    <input type="text" id="phoneNumber" placeholder="Phone Number" maxlength="10" minlength="10" required>
+                    <i class='bx bxs-phone'></i>
+                </div>
+                <div class="input_box_signup">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="healthy_signup_link">
+                    <p>Having a health issue?
+                        <a href="healthy-signup.html">healthy-Signup?</a>
+                    </p>
+                </div>
+                <div class="btn">
+                <button type="button" class="signup_btn" onclick="submitSignup()">Signup</button>
+            </div>
+                <div class="login_link" style="text-align: center;">
+                    <p>Already have an account?
+                        <a href="login.html">login</a>
+                    </p>
+                </div> 
+            </form>
+        </div>
+    </div>
+    <script>
+        function submitSignup() {
+            var name = document.getElementById("name").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var email = document.getElementById("email").value;
+
+            var users = JSON.parse(localStorage.getItem("users")) || [];
+
+            var userExists = users.some(user => user.phoneNumber === phoneNumber || user.email === email);
+
+            if (userExists) {
+                alert("User with the same phone number or email already exists.");
+                return;
+            }
+
+            var newUser = {
+                name: name,
+                phoneNumber: phoneNumber,
+                email: email
+            };
+
+            users.push(newUser);
+            localStorage.setItem("users", JSON.stringify(users));
+
+            alert("Signup successful!");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
+

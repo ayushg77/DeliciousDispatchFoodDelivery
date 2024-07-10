@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search you Food</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body background="images/login.jpg">
+    <section class="container">
+    <form>
+        <input class="search" type="search" name="search"  id="search-items" placeholder="Search your Food" onkeyup="search()">
+        <input class="search_button" type="submit" name="search" value="Search">
+    </form>
+    <div class="productList" id="productList">
+          <div class="product">
+            <img src="images/pizza2.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Classic Pizza</h2>
+                 <h3>₹150</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 500gms , Protein - 15gms</p>
+                <p class="Nutrition">Carbs - 100gms</p>
+                <p class="Nutrition">(Serves 1, Regular)</p>
+            </div>
+          </div>
+          </div>
+          
+          <div class="product">
+            <img src="images/wraps.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Wraps</h2>
+                 <h3>₹80</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 200gms , Protein - 5gms</p>
+                <p class="Nutrition">Carbs - 40gms</p>
+                <p class="Nutrition">(Serves 1)</p>
+                <!-- <p class="Nutrition" id="offer">buy 1 get 1 free</p> -->
+            </div>
+          </div>
+          </div> 
+
+           <div class="product">
+            <img src="images/dosa.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Dosa</h2>
+                 <h3>₹250</h3>
+                 <form action="#">
+                 <button type="submit" class="OrderNow">Order Now</button>
+                </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories-400gms , Protein - 7gms</p>
+                <p class="Nutrition">Carbs - 100gms</p>
+                <p class="Nutrition">(Serves 2)</p>
+            </div>
+          </div>
+          </div>         
+           
+          <div class="product">
+            <img src="images/momos1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Momos</h2>
+                 <h3>₹100</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 360gms , Protein - 7gms</p>
+                <p class="Nutrition">Carbs - 50gms</p>
+                <p class="Nutrition">(Pieces 10)</p>
+            </div>
+          </div>
+          </div>    
+
+          <div class="product">
+            <img src="images/biryani1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Chicken Biryani</h2>
+                 <h3>₹450</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 2000gms , Protein - 60gms</p>
+                <p class="Nutrition">Carbs - 700gms</p>
+                <p class="Nutrition">(Serves 2)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/veg-meal2.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Veg-Meal</h2>
+                 <h3>₹119</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 200gms , Protein - 6gms</p>
+                <p class="Nutrition">Carbs - 20gms</p>
+                <p class="Nutrition">(1 burger,small fries and 250ml cold drink)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/noodles.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Classic Noodles</h2>
+                 <h3>₹120</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 200gms , Protein - 1gms</p>
+                <p class="Nutrition">Carbs - 15gms</p>
+                <p class="Nutrition">(Serves 1)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/pizza3.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Double Cheese Pizza</h2>
+                 <h3>₹300</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 650gms , Protein - 80gms</p>
+                <p class="Nutrition">Carbs - 220gms</p>
+                <p class="Nutrition">(Serves 1, Regular)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/diet1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Diet-Meal</h2>
+                 <h3>₹250</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 120gms , Protein - 20gms</p>
+                <p class="Nutrition">Carbs - 30gms</p>
+                <p class="Nutrition">(Serves 1)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/aloo_paratha.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Aloo-Parathe</h2>
+                 <h3>₹150</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 350gms , Protein - 10gms</p>
+                <p class="Nutrition">Carbs - 150gms</p>
+                <p class="Nutrition">(4 Parathas, Dahi, Tomato sauce)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/manchurian.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Dry Manchurian</h2>
+                 <h3>₹180</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 200gms , Protein - 5gms</p>
+                <p class="Nutrition">Carbs - 80gms</p>
+                <p class="Nutrition">(Pieces 12)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/pav-bhaji1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Pav-Bhaji</h2>
+                 <h3>₹119</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 210gms , Protein - 11gms</p>
+                <p class="Nutrition">Carbs - 70gms</p>
+                <p class="Nutrition">(Serves 1)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/chicken.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Chicken-Box</h2>
+                 <h3>₹500</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 450gms , Protein - 80gms</p>
+                <p class="Nutrition">Carbs - 200gms</p>
+                <p class="Nutrition">(2 leg piece, 4 chicken wings + free 2 dips)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/soup1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Tomato Soup</h2>
+                 <h3>₹100</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 100gms , Protein - 1gms</p>
+                <p class="Nutrition">Carbs - 10gms</p>
+                <p class="Nutrition">(Serves 1)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/starters.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Paneer tikka</h2>
+                 <h3>₹250</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 200gms , Protein - 50gms</p>
+                <p class="Nutrition">Carbs - 60gms</p>
+                <p class="Nutrition">(Pieces 10)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/manchurian.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Manchurian with gravy</h2>
+                 <h3>₹200</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 200gms , Protein - 5gms</p>
+                <p class="Nutrition">Carbs - 80gms</p>
+                <p class="Nutrition">(Pieces 12)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/pizza4.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Paneer Pizza</h2>
+                 <h3>₹350</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 700gms , Protein - 80gms</p>
+                <p class="Nutrition">Carbs - 90gms</p>
+                <p class="Nutrition">(Serves 1, Regular)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/burgur1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Double aloo tikki burger</h2>
+                 <h3>₹100</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 300gms , Protein - 11gms</p>
+                <p class="Nutrition">Carbs - 45gms</p>
+                <p class="Nutrition">(Serves 1)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/north-indian1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>North-indian Thali</h2>
+                 <h3>₹250</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Menu</h4>
+                <p class="Nutrition">Paneer, Yellow dal, salad, Raita</p>
+                <p class="Nutrition">4 chapati, small bowl rice, Gullab jamun</p>
+                <p class="Nutrition">(Serves 1)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/dosa1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Masala Dosa</h2>
+                 <h3>₹300</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 500gms , Protein - 12gms</p>
+                <p class="Nutrition">Carbs - 100gms</p>
+                <p class="Nutrition">(Serves 2)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/diet.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Diet-special</h2>
+                 <h3>₹300</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 150gms , Protein - 25gms</p>
+                <p class="Nutrition">Carbs - 30gms</p>
+                <p class="Nutrition">(Serves 1)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/sweets1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Kaju Katli</h2>
+                 <h3>₹850</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 1000gms , Protein - 40gms</p>
+                <p class="Nutrition">Carbs - 200gms</p>
+                <p class="Nutrition">(1 kg)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/north-indian3.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>North-indian Thali</h2>
+                 <h3>₹400</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                  <h4 class="Nutrition">Menu</h4>
+                  <p class="Nutrition">Paneer, dal makhani, salad, Raita</p>
+                  <p class="Nutrition">8 chapati, 1 mid bowl rice</p>
+                  <p class="Nutrition">2 Gullab jamun</p>
+                  <p class="Nutrition">(Serves 2)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/south-indian1.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>South-Indian Combo</h2>
+                 <h3>₹550</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Menu</h4>
+                <p class="Nutrition">2 Masala Dosa, 4 idli, 4 Vada</p>
+                <p class="Nutrition">with rasam, nariyal ki chatni</p>
+                <p class="Nutrition">and sambar</p>
+                <p class="Nutrition">(Serves 2)</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="product">
+            <img src="images/pizza4.jpg" alt="">
+            <div class="productDetail">
+              <div class="itemDetails">
+                 <h2>Paneer Pizza</h2>
+                 <h3>₹350</h3>
+                 <form action="#">
+                  <button type="submit" class="OrderNow">Order Now</button>
+                 </form>
+                </div>
+                <div id="Nutrition">
+                <h4 class="Nutrition">Nutrition</h4>
+                <p class="Nutrition">Calories- 700gms , Protein - 80gms</p>
+                <p class="Nutrition">Carbs - 90gms</p>
+                <p class="Nutrition">(Serves 1, Regular)</p>
+            </div>
+          </div>
+          </div>
+         
+          
+
+          </div>
+    </section>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const search = () => {
+      const searchbox = document.getElementById("search-items").value.toUpperCase();
+      const storeitems = document.getElementById("productList");
+      const product = document.querySelectorAll(".product");
+      const pname = storeitems.getElementsByTagName("h2");
+
+      for (let i = 0; i < pname.length; i++) {
+        let match = product[i].getElementsByTagName('h2')[0];
+
+        if (match) {
+          let textvalue = match.textContent || match.innerHTML;
+
+          if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+            product[i].style.display = "";
+          } else {
+            product[i].style.display = "none";
+          }
+        }
+      }
+    }
+    document.getElementById("search-items").addEventListener("keyup", search);
+  });
+</script>
+</html>

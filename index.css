@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dd{
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+    font-weight: 700;
+    color: rgb(167, 3, 3);
+    text-shadow: 5px 5px 5px grey;
+    padding: 50px 0px 0px 140px;
+}
+.img1{
+    float: right;
+    max-width: 700px;
+}
+.login{
+    font-size: x-large;
+    border-radius: 0px;
+    border: 0px solid white;
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px 0px 0px 630px;
+    cursor: pointer;
+}
+.login:hover{
+    color: rgb(167, 3, 3);
+    text-shadow: 2px 2px 5px grey;
+
+}
+.Signup{
+    font-size: large;
+    color: white;
+    border-radius: 0px;
+    border: 10px solid black;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+}
+.tag{
+    font-size: 30px;
+    font-weight: 700;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    color: black;
+    padding: 70px 0px 0px 140px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.line1{
+    animation: tag1 15s infinite;
+}
+.line2{
+    animation: tag2 15s infinite;
+}
+.line3{
+    animation: tag3 15s infinite;
+}
+.line4{
+    animation: tag4 15s infinite;
+}
+.line5{
+    animation: tag5 15s infinite;
+}
+@keyframes tag1{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+}
+@keyframes tag2{
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+@keyframes tag3{
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+}
+@keyframes tag4{
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+}
+@keyframes tag5{
+    80%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.tagline{
+    font-size: 20px;
+    padding: 125px 0px 0px 140px;
+    color: rgb(101, 100, 100);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 1px;
+}
+.search input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing:border-box;
+    transition: .5s;
+}
+.search .bar{
+    margin: 0px 0px 0px 140px;
+    width: 400px;
+    height: 50px;
+    padding: 0 20px;
+}
+.search .barsearch{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    left: -27px;
+    cursor: pointer;
+    background-color: rgb(167, 3, 3);
+    color: white;
+    font-weight: 700;
+    border: -5px solid red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.barsearch:hover{
+    background-color: rgb(217, 8, 8);
+}
+.bar:hover{
+    border-color: rgb(167, 3, 3);
+}
+.search i{
+    position: relative;
+    left: -40px;
+    color: rgb(69, 69, 69);
+}
+.feature{
+    text-transform: uppercase;
+    color: rgb(60, 60, 60);
+    padding: 0px 0px 0px 140px;
+    font-size: 20px;
+}
+.feature1{
+    padding: 0px 0px 5px 140px;
+    color: rgb(101, 100, 100);
+}
+/* .loginpage{
+   width: 100%;
+
+}
+@media (min-width: 475px ) {
+    .loginpage{
+        max-width: 475px;
+     }
+}
+@media (min-width: 640px ) {
+    .loginpage{
+        max-width: 640px;
+     }
+}
+@media (min-width: 768px ) {
+    .loginpage{
+        max-width: 768px;
+     }
+}
+@media (min-width: 1024px) {
+    .loginpage{
+       max-width: 1024px;
+     }
+}
+@media (min-width: 1280px) {
+    .loginpage{
+        max-width: 1280px;
+     }
+}
+@media (min-width: 1536px) {
+    .loginpage{
+       max-width: 1536px;
+     }
+} */
+.information{
+    height: 300px;
+    width: 100%;
+    background-color: #2f4f4f;
+    padding: 40px 0px 60px 0px ;
+}
+.img2{
+    max-width: 450px;
+}
+.fastdelivery{
+    font-family: "Sofia", sans-serif;
+    color: chocolate;
+    font-size: xx-large;
+}
+.contacts{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+.logo{
+    position: relative;
+    color: white;
+    font-family: "Sofia", sans-serif;
+    font-size: 40px;
+    left: 130px;
+    top: 40px;
+}
+/* .logoline{
+    font-size: 15px;
+    color: white;
+    font-family: monospace;
+}
+.information{
+    display: inline-flex;
+    color: white;
+} */
